@@ -1,0 +1,1018 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,600&family=Ubuntu:ital,wght@1,400;1,700&display=swap');
+
+*{
+    
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    
+}
+.nav-bar{
+    padding:0;
+    margin:0;
+    background:inherit;
+    padding:5px 0px;
+    position:fixed;
+    width:100%;
+    z-index:99;
+    transition:.5s ease-in-out;
+}
+.sticky{
+    background:crimson;
+    width:100%;
+    position:fixed;
+}
+.container{
+    max-width:1300px;
+    padding:0px 80px;
+    margin:auto;
+    
+    
+}
+.nav-bar .nav{
+    display:flex;
+    justify-content: space-between;
+}
+.nav-bar .container .logo{
+    padding:5px;
+}
+.nav-bar .container .logo h1  a{
+    text-decoration:none;
+    color:white;
+    font-family:"ubuntu";
+    font-weight:400;
+    font-size:40px;
+    letter-spacing: 2px; 
+}
+.nav-bar .container .logo h1 a span{
+    color:rgb(66, 58, 58);
+    
+}
+.ul-list{
+    list-style:none;
+   padding: 15px 10px;
+   
+}
+.ul-list li {
+    display:inline-block;
+  
+}
+.ul-list li a{
+    text-decoration:none;
+    color:white;
+    padding:5px;
+    font-size:20px;
+    transition: 0.3s ease ;
+    
+}
+.ul-list li a:hover,
+.ul-list li a.active{
+   background:rgb(66, 58, 58);
+}
+
+.list{
+    display:none;
+    flex-direction:column;
+    padding-top:15px;
+    margin-right:10px
+    
+    
+}
+.list span{
+    width:40px;
+    height:3px;
+    border-top:3px solid white;
+    display:block;
+    margin-bottom:5px;
+}
+/* start home section */
+.home{
+    height:100vh;
+    background:url("../images/back.jpg") no-repeat center;
+    
+}
+
+
+.home .home-content{
+transform: translate(0%, 100%);   
+    
+}
+  
+
+.home .text-1{
+    font-size:30px;
+    font-weight:500px;
+   
+    color:white;
+}
+.home .text-2{
+    font-size:40px;
+    font-weight:600;
+    color:rgb(5, 58, 5);
+}
+.home .text-3{
+    font-size:18px;
+    color:white;
+    font-weight:700;
+}
+.home .text-3 span{
+    color:rgb(66, 58, 58);
+}
+.home .home-content a{
+    display:block;
+    padding: 5px 10px;
+    text-decoration:none;
+    margin-top:15px;
+    background:crimson;
+    color:white;
+    font-size:18px;
+    width:max-content;
+    border-radius:12px;
+}
+
+/* responsive header and Home  */
+@media (max-width:740px){
+    
+    .nav-bar{
+        position:relative;
+        background:rgb(61, 56, 56);
+        width:100%;
+
+
+    }
+    
+    .ul-list{
+        display:none;
+        position:flex;
+        margin-top:30px;
+        flex-direction: column;
+        width:100%;
+        text-align:center;
+        background:rgb(61, 56, 56);
+        height:calc(100Vh - 60px);
+        padding:10px 0px; 
+        transform:translateX(-50px)   
+    
+    }
+    
+    
+    .ul-list li{
+        display:block;
+        padding:10px;
+        transition:0.3s ease ;
+        top:54px;
+        left:0px;
+    }
+    .ul-list li a{
+        
+        font-size:30px;
+        font-weight:800;
+        border-bottom:1px solid white;
+       
+    }
+    .ul-list li a:hover,
+    .ul-list li a.active{
+        color:crimson;
+    }
+    .nav-bar .container .logo h1  a{
+        font-size:25px;
+    }
+    .nav-bar .container .logo h1 a span{
+        color:crimson;
+        
+    }
+     .list{
+        display:block;
+        cursor:pointer;
+    } 
+    .home-content .text-1{
+        font-size:24px;
+        margin-bottom:10px
+    }
+    .home-content .text-2{
+        font-size:28px;
+        margin-bottom:10px;
+
+    }
+    .home .home-content .text-3{
+        font-size:26px;
+        margin-bottom:10px;
+    }
+    
+
+}
+@media(max-width:300px){
+    .home {
+        height:100vh
+    }
+    .home .container{
+        /* margin:0; */
+        position:relative
+    }
+    
+  .home .container .home-content{
+      min-width:max-content;
+      position:relative;
+      transform: translate(-30%, 50%);
+      
+  }
+      
+    
+    .home .text-1{
+        font-size:14px;
+        font-weight:500px;
+        /* margin:20px 0 ; */
+        color:white;
+        
+    }
+    .home .text-2{
+        font-size:20px;
+        color:rgb(5, 58, 5);
+    }
+    .home .text-3{
+        font-size:16px;
+        color:white;
+        font-weight:700;
+    }
+    .home .text-3 span{
+        color:rgb(66, 58, 58);
+        font-size:18px;
+    }
+    .home .home-content a{
+        display:block;
+        padding: 5px 10px;
+        text-decoration:none;
+        margin-top:15px;
+        background:crimson;
+        color:white;
+        font-size:18px;
+        width:max-content;
+        border-radius:12px;
+    }
+}
+/* about */
+.about{
+    
+    min-height:100vh;
+    
+}
+
+.about .title{
+    
+    display:flex;
+    justify-content:center;
+    
+
+   
+}
+.about .title h2{
+    margin-top:100px;
+    position:relative; 
+    font-size:35px;
+    padding:10px 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.about .title h2::before{
+    content:"";
+    width:180px;
+    position:absolute;
+    top:60px;
+    height:3px;
+    background:black;
+}
+.about .title h2::after{
+    content:"who i am";
+    font-size:15px;
+    text-align:center;
+    width:100px;
+    position:absolute;
+    top:52px;
+    left:40px;
+    color:crimson;
+    background-color:#fff;
+    z-index:2;
+}
+
+.about .content{
+    display:flex;
+    justify-content: space-between;
+    
+
+}
+
+.about .content .about-me{
+    flex:60%;
+    margin:0 auto;
+    font-size:30px;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+
+    /* flex-wrap:wrap; */
+    
+}
+.about .pic img{
+    width:300px;
+    
+}
+.about .about-me p{
+   position:relative;
+   margin-bottom:20px;
+}
+.about .about-me  a{
+    width:250px;
+    background:crimson;
+    text-decoration: none;
+    color:white;
+    font-size: 1em;
+    padding:5px 20px;
+    border:4px solid crimson;
+    border-radius:15px;
+    text-align:center;
+    
+
+
+}
+.about .about-me  a:hover{
+    background:rgb(20, 20, 20);
+    color:crimson;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.about .content .pic{
+    flex:40%;
+    text-align:center
+}
+
+
+/* start responsive about */
+@media(max-width:800px){
+    .about .content{
+        display:flex;
+        justify-content: space-between;
+        
+    }
+    
+    .about .content .about-me{
+        flex:70%;
+        font-size:25px;
+        line-height: 30px;
+        /* flex-wrap:wrap; */
+        
+    }
+    .about .content .pic{
+        flex:30%;
+        
+    }
+    .about .pic img{
+        width:250px;
+       
+        
+    }
+}
+@media(max-width:700px){
+    
+    .about .content{
+        display:flex;
+        justify-content: space-between;
+        
+    }
+    
+    .about .content .about-me{
+        flex:70%;
+        margin:0;
+        font-size:20px;
+        line-height: 25px;
+        /* flex-wrap:wrap; */
+        
+    }
+    .about .content .pic{
+        flex:30%;
+        
+    }
+    .about .pic img{
+        width:200px;
+        
+    }
+}
+@media(max-width:600px){
+    
+    .about .content{
+        display:block;
+        position:relative;
+        padding:40px;
+
+    }
+    
+    .about .content .about-me{
+        
+        margin:0 auto;
+        font-size:25px;
+        line-height: 25px;
+        z-index: 2;
+        text-align:center;
+    }
+    
+    .about .pic img{
+        width:200px;
+        margin-top:30px;
+        text-align:center;
+    }
+}
+@media(max-width:400px){
+    .about .content{
+        display:block;
+        position:relative;
+        padding:40px;
+
+    }
+    .about .content .about-me{
+        margin:0 auto;
+        font-size:24px;
+        line-height: 25px;
+        z-index: 2;
+        position:relative;
+    }
+    
+    .about .pic img{
+        width:200px;
+        margin-top:30px;
+        text-align:center;
+    }
+    .about .content  .about-me {
+        text-align: start;
+        font-size:14px
+    }
+    .about .content .about-me a{
+        width:max-content;
+    }   
+}
+/* start services  */
+.services{
+    background:rgb(17, 16, 16);
+    position:relative;
+    padding:0px;
+    margin:0px;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    min-height:100vh;
+    
+}
+
+.services .title{
+    display:flex;
+    justify-content:center;
+    margin:0 auto 0 auto;
+    color:white;
+    margin-bottom:20px;
+    
+   
+}
+.services .title h2{
+    position:relative; 
+    font-size:30px;
+    padding:10px 0px;
+    margin:10px auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.services .title h2::before{
+    content:"";
+    width:200px;
+    position:absolute;
+    top:60px;
+    height:3px;
+    background:white;
+}
+.services .title h2::after{
+    content:"What I Provids";
+    font-size:15px;
+    text-align:center;
+    width:150px;
+    position:absolute;
+    top:52px;
+    left:20px;
+    color:crimson;
+    background-color:rgb(17, 16, 16);
+    z-index:2;
+}
+
+.services .cards{
+    display:flex;
+    padding:30px 0px;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+}
+.services .cards .card-serv{
+    
+    padding: 20px 0;
+}
+.services .cards .card-serv i{
+    color:white;
+    font-size:35px;
+    position:relative;
+    left:40%;
+}
+.services .cards .card-serv:hover{
+    background:crimson;
+}
+.services .cards .card-serv{
+    background:rgb(27, 26, 26);
+    color:white;
+    width:30%;
+    padding:10px;
+
+}
+
+.services .cards .card-serv h3{
+    text-align:center;
+    font-size:25px;
+    padding:10px 0px;
+}
+.services .cards .card-serv p{
+   font-size:inherit;
+}
+
+/* start responsiv services */
+@media(max-width :800px){
+    
+    .services .cards{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+        gap:20px
+
+    }
+    .services .cards .card-serv{
+        flex:200px;
+        font:.9em;
+        max-width:250px
+       
+    }
+    
+} 
+@media(max-width :400px){
+    
+    .services .cards{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
+       
+
+    }
+    .services .cards .card-serv{
+        flex:150px;
+        font:.7em;
+        max-width:250px
+       
+    }
+    
+} 
+
+/* end responsive services  */
+
+
+
+/* start my skills  */
+.skills{
+    padding:10px 0;
+    margin-bottom:20px;
+    min-height:100vh;
+
+}
+.skills .title{
+    padding-top:50px;
+    text-align:center;
+    width:300px;
+    margin:0 auto;
+
+   
+}
+.skills .title h2{
+    position:relative;
+    font-size:1.8em;
+    margin:20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.skills .title h2::before{
+    content:"";
+    width:125px;
+    height:3px;
+    background:black;
+    position:absolute;
+    top:45px;
+}
+.skills .title h2::after{
+    content:"what i know";
+    color:crimson;
+    background:white;
+    
+    position:absolute;
+    left:100px;
+    font-size:0.5em;
+    top:35px;
+}
+
+.skills .cards{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin:50px 0 0 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+   
+    
+
+}
+.skills .cards .card-read{
+    flex:calc(50% - 20px);
+    font-size:1.3em;
+    margin-right:20px;
+    
+}
+.skills .cards .card-read h3{
+    padding:10px 0px;
+}
+.skills .cards .card-read button{
+    background:crimson;
+    color:white;
+    font-size:1em;
+    padding:5px 20px;
+    border:4px solid crimson;
+    border-radius: 10px;
+    margin-top: 10px;
+
+
+}
+.skills .cards .card-read button:hover{
+    background:rgb(20, 20, 20);
+    color:crimson;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.skills .cards .card-prog{
+    flex:50%;
+    
+}
+.skills .cards .card-prog .pro{
+    display:flex;
+    /* justify-content: space-between; */
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+.skills .cards .card-prog .pro label{
+    flex:calc(90% - 20px);
+    font-size:1.4em;
+}
+.skills .cards .card-prog .pro span{
+    flex:10%;
+    color:crimson
+    
+
+}
+.skills .cards .card-prog .pro progress{
+    flex:100%;
+    margin-bottom:5px;
+}
+/* end skills  */
+
+/* start my skills responsive  */
+@media(max-width:800px){
+    .skills .cards{
+        display:block
+    }
+
+    .skills .title{
+        margin-bottom:30px;  
+    }
+}
+@media (max-width:600px){
+    .skills{
+        padding-left:10px;
+        
+    }
+    
+    .skills .title{
+        margin-bottom:30px;  
+    }
+    .skills .cards .card-read{
+        margin-bottom:20px;
+        flex:100%;
+        
+    }
+    .skills .cards .card-read h3{
+        font-size:20px;
+    }
+    .skills .cards .card-read p{
+        font-size:16px;
+    }
+    .skills .cards .card-prog .pro label,
+    .skills .cards .card-prog .pro span{
+        font-size:18px;
+
+    }
+}
+/* end my skills responsive */
+
+/* start my teams */
+.teams{
+    padding:10px 0;
+    margin-bottom:20px;
+    min-height:100vh;
+    background:rgb(17, 16, 16);
+    overflow:hidden;
+}
+.teams .title{
+    padding-top:50px;
+    text-align:center;
+    width:300px;
+    margin:0 auto;
+    margin-bottom:30px;
+
+   
+}
+.teams .title h2{
+    position:relative;
+    font-size:1.8em;
+    color:white;
+    margin:20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.teams .title h2::before{
+    content:"";
+    width:125px;
+    height:3px;
+    background:white;
+    position:absolute;
+    top:45px;
+}
+.teams .title h2::after{
+    content:"who with me";
+    color:crimson;
+    background:rgb(17, 16, 16);
+    padding:3px 5px;
+    position:absolute;
+    left:80px;
+    font-size:0.5em;
+    top:35px;
+}
+.teams .cards{
+    display:flex;
+    justify-content:space-between;
+    gap:20px 20px;
+    margin-top:50px;
+
+}
+.teams .cards .team{
+    background:rgb(27, 26, 26);
+    color:white;
+    max-width:250px;
+    padding:20px;
+    
+
+}
+.teams .cards .team .img{
+    text-align:center;
+}
+.teams .cards .team img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:2px solid crimson;
+    text-align:center;
+
+    
+}
+.teams .cards .team h3{
+    font-size:1.3em;
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    padding:10px 0;
+}
+.teams .cards .team p{
+    text-align:center;
+    padding:10px 0px;
+} 
+/* end my teams  */
+
+/* start responsive teams  */
+@media(max-width:840px){
+    .teams .container{
+        margin: 0px 20px; 
+    }
+    .teams .cards{
+        flex-wrap:wrap;
+        justify-content:space-around;
+        flex-direction: row;
+      
+    }
+    .teams .cards .team{
+        flex:200px
+    }
+
+}
+@media(max-width:640px){
+    .teams .container{
+        margin: 0px 20px; 
+    }
+    .teams .cards{
+        flex-wrap:wrap;
+        justify-content:space-around;
+        flex-direction: row;
+      
+    }
+    .teams .cards .team{
+        flex:100%;
+        padding:10px
+    }
+    
+    .teams .cards .team h3{
+        font-size:18px
+    }
+    .teams .cards .team p{
+        font-size:14px;
+    }
+}
+
+/* end resposive teams  */
+
+
+.contact{
+    padding:50px 0 10px;
+    margin-bottom:20px;
+    min-height:100vh;
+    
+
+}
+.contact .title{
+    text-align:center;
+    width:300px;
+    margin:0 auto;
+    margin-bottom:20px;
+
+   
+}
+.contact .title h2{
+    position:relative;
+    font-size:1.8em;
+    margin:20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.contact .title h2::before{
+    content:"";
+    width:155px;
+    height:3px;
+    background:black;
+    position:absolute;
+    top:45px;
+}
+.contact .title h2::after{
+    content:"what i know";
+    color:crimson;
+    background:white;
+    
+    position:absolute;
+    left:90px;
+    font-size:0.5em;
+    top:35px;
+    padding:0 3px;
+}
+
+.contact .cards{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin:50px 0 0 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+   
+    
+
+}
+.contact .cards .get{
+    flex:40%;
+
+
+}
+.contact .cards .get .icon{
+    position:relative;;
+    margin: 10px 0 0 0;
+
+}
+.contact .cards .get .icon svg{
+    position:absolute;
+    top:8px;
+    left:5px;
+    
+}
+.contact .cards .get .icon h4,
+.contact .cards .get .icon div{
+    margin-left:30px
+}
+
+.contact .cards .form{
+    flex:40%;
+    position:relative;
+
+    
+}
+.contact .cards .form  h3{
+    margin-bottom:10px;
+}
+.contact .cards form input{
+    display: block;
+    width: 400px;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+}
+.contact .cards form input:first-of-type,
+.contact .cards form input:nth-of-type(2){
+    width:197px;
+    display:inline
+} 
+.contact .cards form input:first-of-type::after{
+    content:"name";
+    position:absolute;
+    z-index:5;
+    color:black;
+}
+
+
+/* style contact section  */
+
+
+/* start contact responsive  */
+@media(max-width:840px){
+
+    .contact .cards form input{
+        width: 300px;
+    }
+    .contact .cards form input:first-of-type,
+    .contact .cards form input:nth-of-type(2){
+        width:147px;
+    } 
+}
+@media(max-width:700px){
+    
+    .contact .cards .get{
+        flex:100%;
+    }
+    .contact .cards .from{
+        flex:100%;
+    }
+    .contact .cards form input{
+        width: 400px;
+    }
+    .contact .cards form input:first-of-type,
+    .contact .cards form input:nth-of-type(2){
+        width:197px;
+    } 
+}
+@media(max-width:600px){
+    .contact .cards form input{
+        width: 300px;
+    }
+    .contact .cards form input:first-of-type,
+    .contact .cards form input:nth-of-type(2){
+        width:147px;
+    } 
+}
+
+/* start with footer */
+.footer{
+    background:rgb(17, 16, 16);
+    color:white;
+    text-align: center;
+    padding:10px;
+    min-height:50px;
+}
+.footer a{
+    text-decoration: none;
+    color:rgb(224, 209, 209);
+}
+
+
+
+@media(max-width:600px){
+    
+
+.nav-bar .container,
+.about .container,
+.skills .container,
+.services .container,
+.teams .container,
+.contact .container{
+    
+    width:100%;
+    justify-content:right;
+    margin:0px;
+    padding:0;
+
+}
+}
